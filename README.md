@@ -11,4 +11,4 @@ This requires programming for specific OSes so this is on hold for now.
 Therefore, for now the program will be spawned as a child only when it is needed (killed the second it finishes) and will just read a file from memory.
 
 ---
-No files are for public distribution and are the sole intellectual property of the owner unless otherwise explicitly stated. 
+No files are for public distribution and the creator is the sole intellectual property of the owner unless otherwise explicitly stated. 
