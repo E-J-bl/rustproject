@@ -1,5 +1,5 @@
 # Behold Graph Theory 
-> Optimisation is not my strong suit so instead of trying to make my algorithm run faster i decided to write it in a different language because that will solve all the problems
+> My code runs slow so instead of optimising i will write it in a faster language 
 - the ethos of this work
 
 ---
