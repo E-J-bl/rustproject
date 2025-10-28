@@ -1,6 +1,6 @@
-use std::arch::x86_64;
+//use std::arch::x86_64;
 use std::collections::HashMap;
-use std::env::consts::ARCH;
+//use std::env::consts::ARCH;
 use std::io::Write;
 use std::{fmt, vec};
 use std::fs::File;
@@ -457,7 +457,7 @@ impl Graph{
             .iter()
             .map(|x| vec![x]).collect();//as nodes become grouped they are automatically treated as lists of nodes
         // therefore a node in the joined set starts of as [[1],[2],[3]] but may end up as [[1,2],[3]] 
-        let cuts;
+        //let cuts;
         let mut len_joined:usize;
         for i in 0..size_shape.0{
             len_joined=joined.len();
@@ -482,7 +482,7 @@ impl Graph{
             |x| x.iter().any(
                 |a| Arc::ptr_eq(a, &start))).unwrap() as u64;
         let start_ind_fixed:u64=start_ind.clone();
-        let mut next_set:Vec<&Arc<Mutex<i64>>>; 
+        let mut next_set:Vec<&Arc<Mutex<i64>>>=vec![]; 
 
         while locally_joined.len()>2{
             let next=self.next_step_in_stoer(
